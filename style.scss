@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./body";
+@import "./footer";
+@import "./icon-container";
+@import "./illustration";
+@import "./headingclass";
+@import "./info-class";
+@import "./main-container";
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+main {
+  margin-inline: auto;
+  padding: 5rem;
+  @include flexCenter(column);
+}
